@@ -1,0 +1,26 @@
+.item {
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 2.5rem;
+   padding: 3.2rem;
+}
+
+.bottomNav {
+   justify-content: end;
+   align-items: start;
+   display: flex;
+   bottom: 0;
+   position: fixed;
+}
+
+.dailyDeals {
+   text-align: center;
+   color: #8BDB81;
+   font-family: Nunito;
+   font-size: 3.5rem;
+}
+
+
+
