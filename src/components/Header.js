@@ -3,10 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, IconButton, Toolbar, Collapse } from "@material-ui/core";
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Avatar from './Avatar';
 import { Link as Scroll } from 'react-scroll';
 import UserLoginForm from "../user/UserLoginForm";
 import DropDownDrawer from './DropDownDrawer';
+import Profile from './Profile';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -59,7 +59,8 @@ export default function Header() {
             <h1 className={classes.appbarTitle}>ShopInn</h1>
             <UserLoginForm />
             <DropDownDrawer />
-            <Avatar />
+            <Profile />
+
             </Toolbar>
         </AppBar>
 
