@@ -1,0 +1,15 @@
+.error {
+  color: red;
+}
+
+.usernameText {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.passwordText {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 16px;
+}

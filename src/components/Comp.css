@@ -22,5 +22,65 @@
    font-size: 3.5rem;
 }
 
+.Sort {
+  color: white;
+  font-size: large;
+}
 
+.avatar {
+  float: right;
+  display: inline-block;
+}
 
+.expired-notice {
+  text-align: center;
+  padding: 2rem;
+  font-family: Nunito;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 0 0.75rem 0 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+  color: #fff;
+}
+
+.show-counter .countdown > p {
+  margin: 0;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}

@@ -5,6 +5,8 @@ import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Avatar from './Avatar';
 import { Link as Scroll } from 'react-scroll';
+import UserLoginForm from "../user/UserLoginForm";
+import DropDownDrawer from './DropDownDrawer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     appbar: {
         background: 'none',
-       
+
     },
     appbarWrapper: {
         width: '80%',
@@ -29,10 +31,6 @@ const useStyles = makeStyles((theme) => ({
     appbarTitle: {
         flexGrow: '1',
         color: '#8BDB81',
-    },
-    icon: {
-        color: '#fff',
-        fontSize: '2rem',
     },
     logo: {
         color: '#8BDB81'
@@ -50,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
     const classes = useStyles();
     const [checked, setChecked] = useState(false);
+    const [dropDown, setDropDown] = useState(false);
     useEffect(()=>{
         setChecked(true);
     },[])
@@ -58,9 +57,8 @@ export default function Header() {
         <AppBar className={classes.appbar} elevation={0}>
             <Toolbar className={classes.appbarWrapper}>
             <h1 className={classes.appbarTitle}>ShopInn</h1>
-            <IconButton>
-                <SortIcon className={classes.icon} />
-            </IconButton>
+            <UserLoginForm />
+            <DropDownDrawer />
             <Avatar />
             </Toolbar>
         </AppBar>

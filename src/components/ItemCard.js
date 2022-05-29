@@ -5,12 +5,18 @@ import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button'
+import DateTimeDisplay from './DateTimeDisplay';
+import CountdownTimer from './CountdownTimer';
 import './Comp.css';
 
 export default function ItemCard() {
+  const ONE_DAY_IN_MS = 1 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+  const dateTimeAfterOneDay = NOW_IN_MS + ONE_DAY_IN_MS;
   return (
     <>
     <h1 className='dailyDeals'>Daily Deals</h1>
+    <CountdownTimer targetDate={dateTimeAfterOneDay} />
     <div className='item'>
     <Card sx={{ maxWidth: 400}}>
       <CardMedia
